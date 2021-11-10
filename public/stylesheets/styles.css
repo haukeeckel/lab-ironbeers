@@ -5,3 +5,148 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #2081c3;
+  height: 4rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  height: 4rem;
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.nav-item a {
+  height: 100%;
+  text-decoration: none;
+  color: #f7f9f9;
+  font-size: 1.2rem;
+}
+
+.nav-item a:hover {
+  color: #bfbfbf;
+}
+
+main {
+  width: 100%;
+  margin-block-end: 8rem;
+  margin-block-start: 5rem;
+}
+
+main div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-end: 3rem;
+}
+
+.landing-img {
+  width: 30vw;
+  height: auto;
+}
+
+.landing-links {
+  margin-block-start: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.landing-links a {
+  text-decoration: none;
+  padding: 1rem 1rem;
+  margin: 0 2rem;
+  background-color: #2081c3;
+  color: white;
+  border-radius: 15px;
+}
+
+.showcase {
+  padding-top: 1.5rem;
+  width: 28vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 30px;
+}
+
+.showcase a img {
+  height: 15rem;
+  width: auto;
+}
+
+.beer-link {
+  order: 1;
+  margin: 0 auto;
+}
+
+.beer-title {
+  order: 2;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  text-align: left;
+}
+
+.beer-tagline {
+  order: 3;
+  color: #bfbfbf;
+  margin-block-end: 1rem;
+}
+
+.beer-description {
+  order: 4;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background-color: #0a2c42;
+  height: 4rem;
+  width: 100vw;
+  color: #f7f9f9;
+}
+footer p {
+  margin-left: 2rem;
+}
